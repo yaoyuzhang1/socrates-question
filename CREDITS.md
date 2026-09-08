@@ -118,3 +118,199 @@ A用K1与J2检测编码mEPO的U、Ψ、m5C/Ψ转录RNA，每份200 ng；双链�
 A、B比较每份200 ng RNA在HPLC纯化前后的J2信号，并用识别3′-UTR的探针控制RNA上样量。C测Lipofectin复合Renilla RNA后的TNF-α，D测TransIT复合firefly RNA后的IFN-α，均为24小时上清。误差线为SEM，类似实验至少重复三次。
 
 读图边界：J2未检出不等于所有长度、类型的杂质绝对为零；这些细胞、载体和时间条件下的结果不能直接推出人体安全与临床保护率。Lipofectin与TransIT不是后来疫苗的LNP配方；图中Ψ不是m1Ψ。
+
+# 图像故事的补充素材
+
+每个故事有48个图文小页，同一科学图像可随线索再次出现。图像文件未作编辑；照片在阅读窗口中可能局部显示，点击可查看完整构图。论文图与图解完整显示。图片年代、拍摄对象与本幕情节可能不同，游戏中保留明确说明。图解及概念画不冒充历史照片或实测数据。
+
+## 阿尔瓦雷斯父子在古比奥
+
+- 作者 / 机构：U.S. Government / Lawrence Berkeley Laboratory
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:LWA_with_Walt.JPG)
+- 原始文件：[dinosaur-alvarez-father-son-960.jpg](https://upload.wikimedia.org/wikipedia/commons/8/8a/LWA_with_Walt.JPG)
+- 许可：[Public domain — U.S. DOE](https://commons.wikimedia.org/wiki/File:LWA_with_Walt.JPG#Licensing)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+路易斯·阿尔瓦雷斯（左）与沃尔特·阿尔瓦雷斯（右），古比奥Bottaccione峡谷的边界露头。
+
+使用边界：不把上传日期当拍摄日期，不重用早期网站可疑的1969年标记；合影不代表图中文字所述某次具体对话。
+
+## 路易斯·阿尔瓦雷斯肖像
+
+- 作者 / 机构：Donald Cooksey / Lawrence Berkeley National Laboratory; NARA catalog 7665726
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Portrait_of_Luis_Alvarez_(cropped).jpg)
+- 原始文件：[dinosaur-luis-alvarez-portrait-cropped.jpg](https://upload.wikimedia.org/wikipedia/commons/f/f5/Portrait_of_Luis_Alvarez_%28cropped%29.jpg)
+- 许可：[Public domain — U.S. DOE](https://commons.wikimedia.org/wiki/File:Portrait_of_Luis_Alvarez_(cropped).jpg#Licensing)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+物理学家路易斯·阿尔瓦雷斯，1962年肖像。
+
+使用边界：早于恐龙灭绝研究；可作人物介绍，不当作1970年代实验瞬间。
+
+## 底栖有孔虫显微照片
+
+- 作者 / 机构：U.S. Geological Survey
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Benthic_foraminifera.jpg)
+- 原始文件：[dinosaur-foraminifera-usgs.jpg](https://upload.wikimedia.org/wikipedia/commons/1/10/Benthic_foraminifera.jpg)
+- 许可：[Public domain — USGS](https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+底栖有孔虫的扫描电子显微照片（USGS），用来理解微小壳体的形态。
+
+使用边界：形态示例，不是古比奥边界前后配对样品，不可冒充研究者当时检测的化石。原网页英文说明不在本次转载范围内。保留四个面板及各自原有标尺。
+
+## 铱金属箔实物
+
+- 作者 / 机构：Dschwen
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Iridium_foil.jpg)
+- 原始文件：[dinosaur-iridium-foil.jpg](https://upload.wikimedia.org/wikipedia/commons/7/76/Iridium_foil.jpg)
+- 许可：[CC BY 2.5](https://creativecommons.org/licenses/by/2.5/)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+铱金属箔实物。边界岩层里的铱是微量成分，不能像图中金属箔这样凭肉眼找到。
+
+使用边界：不能把金属块当作从边界泥层里捡出的铱；现代实物照不是当年实验样品。
+
+## 天体撞击的概念图
+
+- 作者 / 机构：Fredrik; cloud texture from public-domain NASA image
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Impact_event.jpg)
+- 原始文件：[dinosaur-impact-concept.jpg](https://upload.wikimedia.org/wikipedia/commons/c/cb/Impact_event.jpg)
+- 许可：[Public domain — author dedication; NASA cloud texture](https://commons.wikimedia.org/wiki/File:Impact_event.jpg#Licensing)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+天体撞击的概念画，作者Fredrik使用NASA云层素材制作。
+
+使用边界：艺术概念图，不是实拍、数值模拟输出或希克苏鲁伯几何重建；不能由画面读取真实撞击尺度与持续时间。仅517×360。
+
+## 尤卡坦雷达地形回看
+
+- 作者 / 机构：NASA / JPL-Caltech
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Chicxulub_radar_topography.jpg)
+- 原始文件：[dinosaur-chicxulub-radar-relief.jpg](https://upload.wikimedia.org/wikipedia/commons/9/9c/Chicxulub_radar_topography.jpg)
+- 许可：[Public domain — NASA](https://commons.wikimedia.org/wiki/File:Chicxulub_radar_topography.jpg#Licensing)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+2000年SRTM雷达数据生成的尤卡坦地形显示；事后回看希克苏鲁伯的区域位置。
+
+使用边界：这是地形显示，与IODP重力异常图不同；不是1978年的测磁记录，环状显示本身也不能确定撞击成因。
+
+## 德干火山岩地区的层叠地貌
+
+- 作者 / 机构：Shyamal L.
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Deccan_Traps.jpg)
+- 原始文件：[dinosaur-deccan-traps.jpg](https://upload.wikimedia.org/wikipedia/commons/b/bf/Deccan_Traps.jpg)
+- 许可：[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+印度德干火山岩地区的现代照片：层叠的阶梯状山坡与岩壁，坡间覆盖植被，前景可见现代乡村景观。
+
+使用边界：现代地貌照片，不是白垩纪末喷发现场，也不是1988年研究的原始采样记录；地貌外观本身不能给出喷发年代或灭绝因果。
+
+## 树突状细胞示意
+
+- 作者 / 机构：NIAID / Ryan Kissinger
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Dendritic_Cell_(NIH_BioArt_112_-_628881).svg)
+- 原始文件：[mrna-dendritic-cell.svg](https://upload.wikimedia.org/wikipedia/commons/2/22/Dendritic_Cell_%28NIH_BioArt_112_-_628881%29.svg)
+- 许可：[Public domain · US federal government work](https://commons.wikimedia.org/wiki/Template:PD-USGov-NIH-NIAID)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+NIAID 树突状细胞图解；分支形态帮助认识新的收信人，不代表原实验的显微照片。
+
+使用边界：NIAID 树突状细胞图解；分支形态帮助认识新的收信人，不代表原实验的显微照片。
+
+## 分离混合物的 HPLC 仪器示例
+
+- 作者 / 机构：FrankMan2021
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:HPLC_instrument.jpg)
+- 原始文件：[mrna-hplc-instrument.jpg](https://upload.wikimedia.org/wikipedia/commons/a/a3/HPLC_instrument.jpg)
+- 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+2025 年拍摄的 HPLC 仪器示例；帮助认识分离设备，不是卡里科团队 2011 年所用仪器的现场记录。
+
+使用边界：2025 年拍摄的 HPLC 仪器示例；帮助认识分离设备，不是卡里科团队 2011 年所用仪器的现场记录。
+
+## 实验小鼠示意
+
+- 作者 / 机构：NIAID / Ryan Kissinger
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Lab_Mouse_(NIH_BioArt_281).svg)
+- 原始文件：[mrna-lab-mouse.svg](https://upload.wikimedia.org/wikipedia/commons/2/28/Lab_Mouse_%28NIH_BioArt_281%29.svg)
+- 许可：[Public domain · US federal government work](https://commons.wikimedia.org/wiki/Template:PD-USGov-NIH-NIAID)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+NIAID 实验小鼠示意图；没有表达强度或保护率数据，不冒充 1990、2015 或 2017 年的实验记录。
+
+使用边界：NIAID 实验小鼠示意图；没有表达强度或保护率数据，不冒充 1990、2015 或 2017 年的实验记录。
+
+## NIAID 疫苗研究中心的实验工作（2020）
+
+- 作者 / 机构：National Institute of Allergy and Infectious Diseases (NIAID), NIH
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:NIAID_scientist_researching_COVID-19_vaccine.jpg)
+- 原始文件：[mrna-lab-research.jpg](https://upload.wikimedia.org/wikipedia/commons/2/22/NIAID_scientist_researching_COVID-19_vaccine.jpg)
+- 许可：[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+2020 年 NIAID 疫苗研究中心的研究者移取样品；用于展示实验操作，不是宾大早年实验的现场。
+
+使用边界：2020 年 NIAID 疫苗研究中心的研究者移取样品；用于展示实验操作，不是宾大早年实验的现场。
+
+## mRNA 与脂质颗粒的结构图解
+
+- 作者 / 机构：Michael D. Buschmann, Manuel J. Carrasco, Suman Alishetty, Mikell Paige, Mohamad G. Alameh & Drew Weissman / Vaccines 2021, 9, 65, Fig. 1
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Vaccines-09-00065-g001.webp)
+- 原始文件：[mrna-lipid-particle.webp](https://upload.wikimedia.org/wikipedia/commons/4/4e/Vaccines-09-00065-g001.webp)
+- 许可：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+2021 年综述中的 mRNA 脂质颗粒结构图解，显示 RNA 与多类脂质构成的颗粒；是结构模型，不是 2015 年配方的直接成像。
+
+使用边界：2021 年综述中的 mRNA 脂质颗粒结构图解，显示 RNA 与多类脂质构成的颗粒；是结构模型，不是 2015 年配方的直接成像。
+
+## 卡塔琳·卡里科（2024 年肖像）
+
+- 作者 / 机构：Christopher Michel；原 Commons 裁切：Wabbuh
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Katalin_Karik%C3%B3_by_Christopher_Michel_in_2024_(3x4_close_cropped).jpg)
+- 原始文件：[mrna-portrait-kariko.jpg](https://upload.wikimedia.org/wikipedia/commons/1/19/Katalin_Karik%C3%B3_by_Christopher_Michel_in_2024_%283x4_close_cropped%29.jpg)
+- 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+卡塔琳·卡里科 2024 年肖像；用于介绍人物，不是 1989 年研究现场。
+
+使用边界：卡塔琳·卡里科 2024 年肖像；用于介绍人物，不是 1989 年研究现场。
+
+## 德鲁·韦斯曼（2024 年肖像）
+
+- 作者 / 机构：John Sears；原 Commons 裁切：Phibeatrice
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Drew_Weissman,_2023_Nobel_Laureate_in_Medicine_4_(cropped).jpg)
+- 原始文件：[mrna-portrait-weissman.jpg](https://upload.wikimedia.org/wikipedia/commons/1/1b/Drew_Weissman%2C_2023_Nobel_Laureate_in_Medicine_4_%28cropped%29.jpg)
+- 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+韦斯曼在 2024 年诺贝尔周活动中的肖像；不是 1997 年与卡里科相遇的照片。
+
+使用边界：韦斯曼在 2024 年诺贝尔周活动中的肖像；不是 1997 年与卡里科相遇的照片。
+
+## 细胞读取 RNA 制造蛋白质
+
+- 作者 / 机构：NIAID / Ryan Kissinger
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Translation_(NIH_BioArt_523_-_636683).png)
+- 原始文件：[mrna-translation.png](https://upload.wikimedia.org/wikipedia/commons/4/4e/Translation_%28NIH_BioArt_523_-_636683%29.png)
+- 许可：[Public domain · US federal government work](https://commons.wikimedia.org/wiki/Template:PD-USGov-NIH-NIAID)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+NIAID 的 RNA 翻译过程示意，显示核糖体读取 RNA 并形成蛋白链；不是特定历史实验结果。
+
+使用边界：NIAID 的 RNA 翻译过程示意，显示核糖体读取 RNA 并形成蛋白链；不是特定历史实验结果。
+
+## Moderna 新冠疫苗小瓶（2021）
+
+- 作者 / 机构：U.S. Air Force / Airman 1st Class Anna Nolte；Commons 后期：Zacharie Grossen
+- 来源：[原图页面](https://commons.wikimedia.org/wiki/File:Moderna_COVID-19_vaccine.jpg)
+- 原始文件：[mrna-vaccine-vials.jpg](https://upload.wikimedia.org/wikipedia/commons/b/b0/Moderna_COVID-19_vaccine.jpg)
+- 许可：[Public domain · US federal government work](https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force)
+- 呈现：原图或来源提供的等比例缩略图；照片可能在阅读窗口中局部显示，点开后完整展示。
+
+2021 年 1 月嘉手纳基地准备使用的 Moderna 疫苗小瓶；实物照片不代替临床结果或安全性证据。
+
+使用边界：2021 年 1 月嘉手纳基地准备使用的 Moderna 疫苗小瓶；实物照片不代替临床结果或安全性证据。
