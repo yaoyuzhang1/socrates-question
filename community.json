@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T06:00:46.223Z",
+  "updatedAt": "2026-09-09T06:37:25.085Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -13,7 +13,17 @@
     "mrna": {
       "totalPlayers": 0,
       "entries": [],
-      "comments": []
+      "comments": [
+        {
+          "login": "yaoyuzhang1",
+          "nickname": "无名氏",
+          "submittedAt": "2026-09-09T06:37:09.000Z",
+          "issueNumber": 1,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/1",
+          "body": "无",
+          "rating": 4
+        }
+      ]
     }
   }
 }
