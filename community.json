@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T06:53:28.998Z",
+  "updatedAt": "2026-09-09T09:03:02.608Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -40,6 +40,46 @@
           "rating": 4
         }
       ]
+    },
+    "tsunami": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "cholera": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "hans": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "forgery": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "pulsar": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "aircraft": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "argon": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "nucleus": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
     }
   }
 }
