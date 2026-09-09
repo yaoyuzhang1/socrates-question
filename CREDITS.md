@@ -344,6 +344,7 @@ NIAID 的 RNA 翻译过程示意，显示核糖体读取 RNA 并形成蛋白链�
 - [树轮定年论文勘误，Nature，1997](https://www.nature.com/articles/37029)：澄清树轮日期对震源长度与九级地震可能性的约束。
 - [大卫·山口：1700 年地震树轮研究进展，1999](https://pubs.usgs.gov/of/1999/0400/report.pdf)：研究者本人回顾放射性碳、跨地区证据、日本档案与树轮精细定年的先后。
 - [华盛顿大学：原住民口述历史与卡斯卡迪亚地震研究](https://www.washington.edu/news/2005/07/11/native-lore-tells-the-tale-theres-been-a-whole-lotta-shakin-goin-on/)：鲁思·卢德温等人的合作研究；口述传统有其历史与文化背景，不可全部硬配到同一次事件。
+- [阿特沃特：1700 年卡斯卡迪亚地震公开讲座（USGS，2015）](https://www.usgs.gov/media/videos/pubtalk-72015-giant-cascadia-earthquake-january-26-1700)：研究者本人公开讲座；官方介绍强调太平洋两岸数十年的基础研究及公共安全意义。本关摘要不冒充现场原话。
 
 ## 宽街幸存者的秘密
 
@@ -376,6 +377,7 @@ NIAID 的 RNA 翻译过程示意，显示核糖体读取 RNA 并形成蛋白链�
 - [保罗·科尔曼斯：Van Meegeren’s Faked Vermeers and De Hooghs（1949）书目与预览](https://books.google.com/books?id=Db_qAAAAMAAJ)：当时科学鉴定报告的书目与有限预览，可确认作者、出版与使用截面、射线等研究类别；本章不据有限预览编造具体化学峰或逐画结论。
 - [考陶尔德：There Not There 教学资料，第 4 页](https://sites.courtauld.ac.uk/macurating/wp-content/uploads/sites/8/2018/06/There-Not-There-Learning-Resource.pdf)：后续《鸨母》研究：旧画布与现代合成树脂并存。此证据属于后来研究的另一幅画，不能倒填到 1945 年的个案现场。
 - [考陶尔德：Art and Artifice 展览资料（2023）](https://courtauld.ac.uk/wp-content/uploads/2023/03/Art-and-Artifice-PDF-for-website.pdf)：讲解《鸨母》的捐赠、伪作材料研究及鉴定方法；并提醒许多艺术品仍有不确定性。
+- [博伊曼斯馆方研究：《梵·米格伦的维米尔》（2011）](https://shop.boijmans.nl/products/van-meegerens-vermeers)：馆方专门研究的内容介绍，回顾 1937 年购藏时的高度评价与战后供认带来的震动；本关未将评价泛化为所有专家无异议。
 
 ## 来自星空的心跳
 
@@ -418,3 +420,5 @@ NIAID 的 RNA 翻译过程示意，显示核糖体读取 RNA 并形成蛋白链�
 # 十关版声音说明
 
 十关共有396个选项解析录音，均为普通话合成配音，不是科学家真人录音。网页按需加载所选项的MP3；本地单文件版包含全部录音。正误提示音由浏览器合成。
+
+发现过程的短氛围声默认关闭，由浏览器在本机合成，随阅读节奏作轻微变化，不是历史现场录音，也不是科学家人物配音。玩家可自愿开启或关闭；答题及播放解析时停止氛围声。未新增外部音乐素材。
