@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T09:03:02.608Z",
+  "updatedAt": "2026-09-09T09:57:35.763Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -52,8 +52,23 @@
       "comments": []
     },
     "hans": {
-      "totalPlayers": 0,
-      "entries": [],
+      "totalPlayers": 1,
+      "entries": [
+        {
+          "rank": 1,
+          "login": "yaoyuzhang1",
+          "nickname": "程序员",
+          "submittedAt": "2026-09-09T09:57:21.000Z",
+          "issueNumber": 3,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/3",
+          "score": 97,
+          "firstCorrectCount": 11,
+          "correctedCount": 1,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-09T09:55:50.730Z"
+        }
+      ],
       "comments": []
     },
     "forgery": {
