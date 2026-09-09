@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-09T06:00:46.223Z",
+  "repository": "yaoyuzhang1/socrates-question",
+  "source": "github-issues",
+  "selfReported": true,
+  "chapters": {
+    "research": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    },
+    "mrna": {
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
+    }
+  }
+}
