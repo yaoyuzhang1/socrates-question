@@ -26,6 +26,30 @@ test('packet strictly rejects claimed score, unknown versions, invalid dates and
   for (const candidate of [{ ...packet(), score: 100 }, { ...packet(), version: 2 }, { ...packet(), completedAt: 'not a date' }, { ...packet(), runId: '../../../main' }, { ...packet(), marks: 'legacy' }, null, [], '{broken']) assert.equal(parsePacket(candidate), null);
 });
 
+test('reference packets and drafts preserve their explicit source without changing scoring', () => {
+  const reference = { ...packet('mrna', 'f'.repeat(8) + 'r'.repeat(12)), recordType: 'reference' };
+  assert.deepEqual(parsePacket(JSON.stringify(reference)), reference);
+  const draft = buildScoreDraftUrl(reference, { nickname: '继续调查' });
+  assert.match(draft.body, /旧存档参考成绩为 \*\*76 \/ 100\*\*/);
+  assert.match(draft.body, /榜单会标记为参考成绩/);
+  assert.deepEqual(parseIssueSubmission(draft.body).packet, reference);
+  const snapshot = buildCommunitySnapshot([issue(1, draft.body)], now);
+  const entry = snapshot.chapters.mrna.entries[0];
+  assert.equal(entry.recordType, 'reference');
+  assert.equal(entry.score, 76);
+  assert.equal(entry.firstCorrectCount, 8);
+  assert.equal(entry.correctedCount, 12);
+  assert.deepEqual(validateCommunitySnapshot(snapshot), snapshot);
+});
+
+test('optional record type accepts only reference and does not admit unknown packet fields', () => {
+  for (const recordType of ['full', 'legacy', '', null, false, 1, {}, undefined]) assert.equal(parsePacket({ ...packet(), recordType }), null);
+  assert.equal(parsePacket({ ...packet(), recordType: 'reference', score: 100 }), null);
+  assert.equal(parsePacket({ ...packet(), recordType: 'reference', source: 'trusted' }), null);
+  const body = buildScoreDraftUrl({ ...packet(), recordType: 'reference' }).body;
+  assert.equal(parseIssueSubmission(body.replace('"reference"', '"full"')), null);
+});
+
 test('GitHub drafts round-trip Chinese, quotes and HTML as data with no privileged query parameters', () => {
   const fields = { nickname: '石头侦探', comment: '试试“引号”与 <img src=x onerror=alert(1)>。\n下一行仍然是文字。', rating: 4 };
   const draft = buildScoreDraftUrl(packet(), fields);
@@ -101,6 +125,30 @@ test('equal scores share competition ranks, without a speed incentive', () => {
   assert.deepEqual(snapshot.chapters.research.entries.map(item => [item.rank, item.issueNumber]), [[1, 1], [1, 2], [3, 3]]);
 });
 
+test('the same account keeps a full record over an earlier equal reference score in either input order', () => {
+  const user = { id: 42, login: 'one-player', type: 'User' };
+  const reference = issue(1, buildScoreDraftUrl({ ...packet(), recordType: 'reference' }).body, { user });
+  const full = scoreIssue(2, undefined, { user });
+  for (const rows of [[reference, full], [full, reference]]) {
+    const snapshot = buildCommunitySnapshot(rows, now);
+    assert.equal(snapshot.chapters.research.totalPlayers, 1);
+    assert.equal(snapshot.chapters.research.entries[0].issueNumber, 2);
+    assert.equal(Object.hasOwn(snapshot.chapters.research.entries[0], 'recordType'), false);
+  }
+  const higherReference = buildCommunitySnapshot([reference, scoreIssue(2, 'r'.repeat(16), { user })], now);
+  assert.equal(higherReference.chapters.research.entries[0].issueNumber, 1);
+  assert.equal(higherReference.chapters.research.entries[0].recordType, 'reference');
+});
+
+test('full and reference records share competition ranks while full records are listed first on a tie', () => {
+  const reference = issue(1, buildScoreDraftUrl({ ...packet(), recordType: 'reference' }).body);
+  const rows = [reference, scoreIssue(2), scoreIssue(3, 'r'.repeat(16))];
+  const snapshot = buildCommunitySnapshot(rows, now);
+  assert.deepEqual(snapshot.chapters.research.entries.map(entry => [entry.rank, entry.issueNumber]), [[1, 2], [1, 1], [3, 3]]);
+  assert.deepEqual(buildCommunitySnapshot(rows.toReversed(), now), snapshot);
+  assert.deepEqual(validateCommunitySnapshot(snapshot), snapshot);
+});
+
 test('closing, removing or hiding an issue withdraws both its score and comment', () => {
   const rows = [scoreIssue(1, 'f'.repeat(16), {}, { comment: '留下思考', rating: 5 })];
   assert.equal(buildCommunitySnapshot(rows, now).chapters.research.comments.length, 1);
@@ -156,6 +204,26 @@ test('remote snapshots reject altered scores, rank order, links, identities and 
   for (const mutate of [copy => { copy.chapters.research.entries[0].score = 999; }, copy => { copy.chapters.research.entries[1].rank = 1; }, copy => { copy.chapters.research.entries[0].issueUrl = 'javascript:alert(1)'; }, copy => { copy.chapters.research.entries[1].login = 'player-1'; }, copy => { copy.secret = 'unexpected'; }, copy => { copy.chapters.research.totalPlayers = 0; }]) {
     const copy = structuredClone(snapshot); mutate(copy); assert.equal(validateCommunitySnapshot(copy), null);
   }
+});
+
+test('existing snapshots without record type remain unchanged and reference snapshots stay strictly validated', () => {
+  const old = buildCommunitySnapshot([scoreIssue(1)], now);
+  assert.equal(Object.hasOwn(old.chapters.research.entries[0], 'recordType'), false);
+  assert.deepEqual(validateCommunitySnapshot(JSON.parse(JSON.stringify(old))), old);
+  const reference = structuredClone(old);
+  reference.chapters.research.entries[0].recordType = 'reference';
+  assert.deepEqual(validateCommunitySnapshot(reference), reference);
+  for (const recordType of ['full', 'legacy', '', null, false, 1, {}, undefined]) {
+    const candidate = structuredClone(old);
+    candidate.chapters.research.entries[0].recordType = recordType;
+    assert.equal(validateCommunitySnapshot(candidate), null);
+  }
+  for (const fields of [{ score: 999 }, { source: 'trusted' }]) {
+    const candidate = structuredClone(reference);
+    Object.assign(candidate.chapters.research.entries[0], fields);
+    assert.equal(validateCommunitySnapshot(candidate), null);
+  }
+  assert.equal(sameCommunityData(old, reference), false);
 });
 
 test('input ordering does not change ranking or comment selection', () => {

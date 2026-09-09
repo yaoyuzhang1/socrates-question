@@ -1,8 +1,8 @@
 export type ChapterId = 'research' | 'mrna';
-export type ScorePacket = { version: 1; chapter: ChapterId; runId: string; completedAt: string; marks: string };
+export type ScorePacket = { version: 1; chapter: ChapterId; runId: string; completedAt: string; marks: string; recordType?: 'reference' };
 export type ScoreStats = { score: number; firstCorrectCount: number; correctedCount: number; hintedCount: number; totalQuestions: number };
 export type PublicAuthor = { login: string; nickname: string; submittedAt: string; issueNumber: number; issueUrl: string };
-export type LeaderboardEntry = PublicAuthor & ScoreStats & { rank: number; completedAt: string };
+export type LeaderboardEntry = PublicAuthor & ScoreStats & { rank: number; completedAt: string; recordType?: 'reference' };
 export type CommunityComment = PublicAuthor & { body: string; rating: number | null };
 export type ChapterCommunity = { entries: LeaderboardEntry[]; totalPlayers: number; comments: CommunityComment[] };
 export type CommunitySnapshot = { version: 1; updatedAt: string; repository: string; source: 'github-issues'; selfReported: true; chapters: Record<ChapterId, ChapterCommunity> };

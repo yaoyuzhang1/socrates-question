@@ -37,8 +37,9 @@ export function scoreMarks(chapter, marks) {
 export function parsePacket(input) {
   let value = input;
   if (typeof input === 'string') { try { value = JSON.parse(input); } catch { return null; } }
-  if (!exactKeys(value, ['version', 'chapter', 'runId', 'completedAt', 'marks']) || value.version !== 1 || !scoreMarks(value.chapter, value.marks) || typeof value.runId !== 'string' || !UUID.test(value.runId) || !dateString(value.completedAt)) return null;
-  return { version: 1, chapter: value.chapter, runId: value.runId.toLowerCase(), completedAt: new Date(value.completedAt).toISOString(), marks: value.marks };
+  const hasRecordType = plainObject(value) && Object.hasOwn(value, 'recordType');
+  if (!exactKeys(value, ['version', 'chapter', 'runId', 'completedAt', 'marks', ...(hasRecordType ? ['recordType'] : [])]) || hasRecordType && value.recordType !== 'reference' || value.version !== 1 || !scoreMarks(value.chapter, value.marks) || typeof value.runId !== 'string' || !UUID.test(value.runId) || !dateString(value.completedAt)) return null;
+  return { version: 1, chapter: value.chapter, runId: value.runId.toLowerCase(), completedAt: new Date(value.completedAt).toISOString(), marks: value.marks, ...(hasRecordType ? { recordType: 'reference' } : {}) };
 }
 
 function submission(input) {
@@ -56,7 +57,7 @@ function submission(input) {
 
 function bodyFor(record) {
   const stats = record.kind === 'score' ? scoreMarks(record.chapter, record.packet.marks) : null;
-  const introduction = stats ? `我完成了《${CHAPTER_NAMES[record.chapter]}》，本次自报成绩为 **${stats.score} / 100**。` : `我想对《${CHAPTER_NAMES[record.chapter]}》提交评论。`;
+  const introduction = stats ? `我完成了《${CHAPTER_NAMES[record.chapter]}》，${record.packet.recordType === 'reference' ? '旧存档参考成绩' : '本次自报成绩'}为 **${stats.score} / 100**。${record.packet.recordType === 'reference' ? '此成绩依据旧版保存的作答结果还原，榜单会标记为参考成绩。' : ''}` : `我想对《${CHAPTER_NAMES[record.chapter]}》提交评论。`;
   return [introduction, '', '本帖公开发布后，GitHub账号、显示名、成绩及填写的评论会进入游戏社区。关闭本帖可从下次更新的榜单中撤回。成绩用于交流，不作为正式考核凭证。', '', '下面是游戏生成的提交记录；请保留记录格式。显示名、评论与星级也包含在记录中。', '', `\`\`\`${RECORD_FENCE}`, JSON.stringify(record, null, 2), '```', ''].join('\n');
 }
 
@@ -96,6 +97,10 @@ export function emptyCommunitySnapshot(updatedAt = new Date().toISOString()) {
   return { version: 1, updatedAt, repository: REPOSITORY, source: 'github-issues', selfReported: true, chapters: { research: { entries: [], totalPlayers: 0, comments: [] }, mrna: { entries: [], totalPlayers: 0, comments: [] } } };
 }
 
+// Prefer the higher score, then a complete current record over a reference record.
+// Dates only make selection deterministic; equal scores still share a rank.
+const compareScores = (a, b) => b.score - a.score || Number(a.recordType === 'reference') - Number(b.recordType === 'reference') || compareText(a.submittedAt, b.submittedAt) || a.issueNumber - b.issueNumber;
+
 /** Reduce current OPEN issues. Closing an issue removes both its score and comment. */
 export function buildCommunitySnapshot(issues, updatedAt = new Date().toISOString()) {
   if (!Array.isArray(issues) || !dateString(updatedAt)) throw new TypeError('Invalid snapshot inputs.');
@@ -109,9 +114,9 @@ export function buildCommunitySnapshot(issues, updatedAt = new Date().toISOStrin
     if (!record) continue;
     const author = { login: issue.user.login, nickname: record.nickname || issue.user.login.slice(0, 24), submittedAt: new Date(issue.created_at).toISOString(), issueNumber: issue.number, issueUrl: `https://github.com/${REPOSITORY}/issues/${issue.number}` };
     if (record.kind === 'score') {
-      const entry = { ...author, ...scoreMarks(record.chapter, record.packet.marks), completedAt: record.packet.completedAt };
+      const entry = { ...author, ...scoreMarks(record.chapter, record.packet.marks), completedAt: record.packet.completedAt, ...(record.packet.recordType === 'reference' ? { recordType: 'reference' } : {}) };
       const previous = scores[record.chapter].get(issue.user.id);
-      if (!previous || entry.score > previous.score || (entry.score === previous.score && (entry.submittedAt < previous.submittedAt || (entry.submittedAt === previous.submittedAt && entry.issueNumber < previous.issueNumber)))) scores[record.chapter].set(issue.user.id, entry);
+      if (!previous || compareScores(entry, previous) < 0) scores[record.chapter].set(issue.user.id, entry);
     }
     if (record.comment || record.rating !== null) {
       const item = { ...author, body: record.comment, rating: record.rating };
@@ -120,7 +125,7 @@ export function buildCommunitySnapshot(issues, updatedAt = new Date().toISOStrin
     }
   }
   for (const chapter of CHAPTERS) {
-    const entries = [...scores[chapter].values()].sort((a, b) => b.score - a.score || compareText(a.submittedAt, b.submittedAt) || a.issueNumber - b.issueNumber);
+    const entries = [...scores[chapter].values()].sort(compareScores);
     let rank = 0;
     snapshot.chapters[chapter] = {
       totalPlayers: entries.length,
@@ -144,14 +149,15 @@ export function validateCommunitySnapshot(value) {
       return { login: item.login, nickname: item.nickname, submittedAt: new Date(item.submittedAt).toISOString(), issueNumber: item.issueNumber, issueUrl: item.issueUrl };
     };
     for (const item of data.entries) {
-      if (!exactKeys(item, ['rank', 'login', 'nickname', 'submittedAt', 'issueNumber', 'issueUrl', 'score', 'firstCorrectCount', 'correctedCount', 'hintedCount', 'totalQuestions', 'completedAt'])) return null;
+      const hasRecordType = plainObject(item) && Object.hasOwn(item, 'recordType');
+      if (!exactKeys(item, ['rank', 'login', 'nickname', 'submittedAt', 'issueNumber', 'issueUrl', 'score', 'firstCorrectCount', 'correctedCount', 'hintedCount', 'totalQuestions', 'completedAt', ...(hasRecordType ? ['recordType'] : [])]) || hasRecordType && item.recordType !== 'reference') return null;
       const identity = author(item);
       if (!identity || players.has(item.login.toLowerCase()) || !integer(item.rank) || item.rank === 0 || !dateString(item.completedAt) || !integer(item.firstCorrectCount) || !integer(item.correctedCount) || !integer(item.hintedCount) || item.totalQuestions !== QUESTION_COUNTS[chapter] || item.firstCorrectCount + item.correctedCount + item.hintedCount !== item.totalQuestions) return null;
       const expected = Math.round((100 * item.firstCorrectCount + 60 * item.correctedCount + 30 * item.hintedCount) / item.totalQuestions);
       const previous = entries.at(-1);
       if (item.score !== expected || (previous && item.score > previous.score) || item.rank !== (previous?.score === item.score ? previous.rank : entries.length + 1)) return null;
       players.add(item.login.toLowerCase());
-      entries.push({ rank: item.rank, ...identity, score: item.score, firstCorrectCount: item.firstCorrectCount, correctedCount: item.correctedCount, hintedCount: item.hintedCount, totalQuestions: item.totalQuestions, completedAt: new Date(item.completedAt).toISOString() });
+      entries.push({ rank: item.rank, ...identity, score: item.score, firstCorrectCount: item.firstCorrectCount, correctedCount: item.correctedCount, hintedCount: item.hintedCount, totalQuestions: item.totalQuestions, completedAt: new Date(item.completedAt).toISOString(), ...(hasRecordType ? { recordType: 'reference' } : {}) });
     }
     for (const item of data.comments) {
       if (!exactKeys(item, ['login', 'nickname', 'submittedAt', 'issueNumber', 'issueUrl', 'body', 'rating'])) return null;
