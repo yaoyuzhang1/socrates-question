@@ -2,13 +2,44 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { REPOSITORY, scoreMarks, parsePacket, buildScoreDraftUrl, buildCommentDraftUrl, parseIssueSubmission, buildCommunitySnapshot, emptyCommunitySnapshot, validateCommunitySnapshot, sameCommunityData } from './community.mjs';
+import { REPOSITORY, QUESTION_COUNTS, CHAPTER_NAMES, scoreMarks, parsePacket, buildScoreDraftUrl, buildCommentDraftUrl, parseIssueSubmission, buildCommunitySnapshot, emptyCommunitySnapshot, validateCommunitySnapshot, sameCommunityData } from './community.mjs';
 
 const now = '2026-09-09T12:00:00.000Z';
 const runId = '00000000-0000-4000-8000-000000000001';
-const packet = (chapter = 'research', marks = 'f'.repeat(chapter === 'research' ? 16 : 20)) => ({ version: 1, chapter, runId, completedAt: now, marks });
+const packet = (chapter = 'research', marks = 'f'.repeat(QUESTION_COUNTS[chapter])) => ({ version: 1, chapter, runId, completedAt: now, marks });
 const issue = (number, body, overrides = {}) => ({ number, state: 'open', user: { id: number, login: `player-${number}`, type: 'User' }, created_at: new Date(Date.parse(now) + number * 1000).toISOString(), body, ...overrides });
 const scoreIssue = (number, marks = 'f'.repeat(16), overrides = {}, fields = {}) => issue(number, buildScoreDraftUrl(packet('research', marks), fields).body, overrides);
+
+void test('all ten chapters publish to independent boards through the exact draft parser', () => {
+  const ids = ['research','mrna','tsunami','cholera','hans','forgery','pulsar','aircraft','argon','nucleus'];
+  assert.deepEqual(Object.keys(QUESTION_COUNTS), ids);
+  const issues = ids.map((id, index) => {
+    const draft = buildScoreDraftUrl(packet(id), { nickname: '本地测试', comment: id + ' 的测试评论' });
+    assert.ok(draft.body.includes(CHAPTER_NAMES[id]));
+    assert.equal(parseIssueSubmission(draft.body).packet.chapter, id);
+    return issue(index + 1, draft.body, { user: { id: 77, login: 'fixture-scout', type: 'User' } });
+  });
+  const snapshot = buildCommunitySnapshot(issues, now);
+  assert.deepEqual(validateCommunitySnapshot(snapshot), snapshot);
+  for (const id of ids) {
+    assert.equal(snapshot.chapters[id].totalPlayers, 1);
+    assert.equal(snapshot.chapters[id].entries[0].totalQuestions, QUESTION_COUNTS[id]);
+    assert.equal(snapshot.chapters[id].entries[0].score, 100);
+    assert.equal(snapshot.chapters[id].comments[0].body, id + ' 的测试评论');
+    assert.equal(scoreMarks(id, 'f'.repeat(QUESTION_COUNTS[id] - 1)), null);
+  }
+  const withdrawn = buildCommunitySnapshot(issues.map(row => row.number === 3 ? {...row,state:'closed'} : row), now);
+  assert.equal(withdrawn.chapters.tsunami.totalPlayers, 0);
+  for (const id of ids.filter(id => id !== 'tsunami')) assert.deepEqual(withdrawn.chapters[id], snapshot.chapters[id]);
+});
+
+void test('cached two-chapter snapshots retain real records and normalize eight empty boards', () => {
+  const original = buildCommunitySnapshot([scoreIssue(1)], now);
+  const legacy = { ...original, chapters: {research: original.chapters.research, mrna: original.chapters.mrna} };
+  assert.deepEqual(validateCommunitySnapshot(legacy), original);
+  assert.equal(Object.keys(legacy.chapters).length, 2, 'validation does not mutate received JSON');
+  assert.equal(validateCommunitySnapshot({...legacy,chapters:{...legacy.chapters,unknown:{}}}), null);
+});
 
 test('both chapters recompute 100 / 60 / 30 per question, including rounding', () => {
   assert.equal(scoreMarks('research', 'f'.repeat(16)).score, 100);

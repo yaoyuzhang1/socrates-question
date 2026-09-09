@@ -1,8 +1,8 @@
 // Shared by the browser and the GitHub Actions snapshot builder. No credentials belong here.
 export const REPOSITORY = 'yaoyuzhang1/socrates-question';
 export const SNAPSHOT_URL = `https://raw.githubusercontent.com/${REPOSITORY}/main/community.json`;
-export const QUESTION_COUNTS = Object.freeze({ research: 16, mrna: 20 });
-export const CHAPTER_NAMES = Object.freeze({ research: '恐龙灭绝', mrna: 'Karikó与mRNA' });
+export const QUESTION_COUNTS = Object.freeze({ research:16, mrna:20, tsunami:12, cholera:12, hans:12, forgery:12, pulsar:12, aircraft:12, argon:12, nucleus:12 });
+export const CHAPTER_NAMES = Object.freeze({ research:'恐龙灭绝', mrna:'Karikó与mRNA', tsunami:'没有震感的海啸', cholera:'宽街幸存者的秘密', hans:'全城最会算数的马', forgery:'我必须证明这幅名画是假的', pulsar:'来自星空的心跳', aircraft:'没有弹孔的地方', argon:'空气里多出来的一点重量', nucleus:'金箔背后的反击' });
 const CHAPTERS = Object.keys(QUESTION_COUNTS);
 const RECORD_FENCE = 'socrates-question';
 const MAX_BODY = 20_000;
@@ -94,7 +94,7 @@ export function parseIssueSubmission(body) {
 }
 
 export function emptyCommunitySnapshot(updatedAt = new Date().toISOString()) {
-  return { version: 1, updatedAt, repository: REPOSITORY, source: 'github-issues', selfReported: true, chapters: { research: { entries: [], totalPlayers: 0, comments: [] }, mrna: { entries: [], totalPlayers: 0, comments: [] } } };
+  return { version: 1, updatedAt, repository: REPOSITORY, source: 'github-issues', selfReported: true, chapters: Object.fromEntries(CHAPTERS.map(chapter => [chapter,{ entries: [], totalPlayers: 0, comments: [] }])) };
 }
 
 // Prefer the higher score, then a complete current record over a reference record.
@@ -105,8 +105,8 @@ const compareScores = (a, b) => b.score - a.score || Number(a.recordType === 're
 export function buildCommunitySnapshot(issues, updatedAt = new Date().toISOString()) {
   if (!Array.isArray(issues) || !dateString(updatedAt)) throw new TypeError('Invalid snapshot inputs.');
   const snapshot = emptyCommunitySnapshot(new Date(updatedAt).toISOString());
-  const scores = { research: new Map(), mrna: new Map() };
-  const comments = { research: new Map(), mrna: new Map() };
+  const scores = Object.fromEntries(CHAPTERS.map(chapter => [chapter,new Map()]));
+  const comments = Object.fromEntries(CHAPTERS.map(chapter => [chapter,new Map()]));
   for (const issue of issues) {
     if (!plainObject(issue) || issue.state !== 'open' || issue.pull_request || issue.user?.type !== 'User' || !Number.isSafeInteger(issue.user.id) || issue.user.id <= 0 || typeof issue.user.login !== 'string' || !LOGIN.test(issue.user.login) || !integer(issue.number) || issue.number === 0 || !dateString(issue.created_at)) continue;
     if (Array.isArray(issue.labels) && issue.labels.some(label => (typeof label === 'string' ? label : label?.name) === 'community-hidden')) continue;
@@ -138,10 +138,11 @@ export function buildCommunitySnapshot(issues, updatedAt = new Date().toISOStrin
 
 /** Return a canonical safe-to-render snapshot or null. Render all text as text, never HTML. */
 export function validateCommunitySnapshot(value) {
-  if (!exactKeys(value, ['version', 'updatedAt', 'repository', 'source', 'selfReported', 'chapters']) || value.version !== 1 || !dateString(value.updatedAt) || value.repository !== REPOSITORY || value.source !== 'github-issues' || value.selfReported !== true || !exactKeys(value.chapters, CHAPTERS)) return null;
+  if (!exactKeys(value, ['version', 'updatedAt', 'repository', 'source', 'selfReported', 'chapters']) || value.version !== 1 || !dateString(value.updatedAt) || value.repository !== REPOSITORY || value.source !== 'github-issues' || value.selfReported !== true || !plainObject(value.chapters) || !Object.hasOwn(value.chapters,'research') || !Object.hasOwn(value.chapters,'mrna') || Object.keys(value.chapters).some(chapter => !isChapter(chapter))) return null;
   const result = emptyCommunitySnapshot(new Date(value.updatedAt).toISOString());
   for (const chapter of CHAPTERS) {
-    const data = value.chapters[chapter];
+    // A cached two-chapter snapshot remains readable while the live workflow upgrades.
+    const data = value.chapters[chapter] ?? { entries:[],totalPlayers:0,comments:[] };
     if (!exactKeys(data, ['entries', 'totalPlayers', 'comments']) || !Array.isArray(data.entries) || !integer(data.totalPlayers) || data.entries.length !== Math.min(100, data.totalPlayers) || !Array.isArray(data.comments) || data.comments.length > 30) return null;
     const entries = [], comments = [], players = new Set(), commenters = new Set();
     const author = item => {

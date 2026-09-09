@@ -121,7 +121,7 @@ A、B比较每份200 ng RNA在HPLC纯化前后的J2信号，并用识别3′-UTR
 
 # 图像故事的补充素材
 
-每个故事有48个图文小页，同一科学图像可随线索再次出现。图像文件未作编辑；照片在阅读窗口中可能局部显示，点击可查看完整构图。论文图与图解完整显示。图片年代、拍摄对象与本幕情节可能不同，游戏中保留明确说明。图解及概念画不冒充历史照片或实测数据。
+原有两篇故事各有48个图文小页，同一科学图像可随线索再次出现。图像文件未作编辑；照片在阅读窗口中可能局部显示，点击可查看完整构图。论文图与图解完整显示。图片年代、拍摄对象与本幕情节可能不同，游戏中保留明确说明。图解及概念画不冒充历史照片或实测数据。
 
 ## 阿尔瓦雷斯父子在古比奥
 
@@ -328,4 +328,93 @@ NIAID 的 RNA 翻译过程示意，显示核糖体读取 RNA 并形成蛋白链�
 
 # 答题声音与解析配音
 
-两篇故事的108个选项均有普通话合成配音。朗读所选选项的解释；正确时补充该题的证据推理，错误时提示重新作答。显示文字保留原文，RNA在朗读时按字母发音。配音使用Microsoft Xiaoxiao中文合成语音，不是真人科学家的录音。正误提示音由浏览器合成。录音随游戏内嵌，游玩时无需调用在线语音服务；可关闭声音、停止或重播解析。
+原有两篇故事的108个选项均有普通话合成配音。朗读所选选项的解释；正确时补充该题的证据推理，错误时提示重新作答。显示文字保留原文，RNA在朗读时按字母发音。配音使用Microsoft Xiaoxiao中文合成语音，不是真人科学家的录音。正误提示音由浏览器合成。网页按需加载已生成的录音，本地单文件版内嵌录音；游玩时无需调用在线语音服务；可关闭声音、停止或重播解析。
+
+# 八篇新调查的逐页图解
+
+八篇新故事各含36页，合计288幅原创SVG图解。图中人物、器材、路径和空间关系经过简化；不是历史照片、论文原图或真实实验录像。原始读数与教学示例在正文中区分，来源入口逐幕保留。
+
+## 没有震感的海啸
+
+你将整理真实研究中的分散证据。日本档案作为开场，随后按现代调查进展推进；各团队并非按照游戏次序相遇。图形均为证据关系示意，不是原始地图、树轮照片或数值模拟；原始材料可在来源中查阅。
+
+- [USGS《1700 年的孤儿海啸》：阿特沃特等，2005](https://www.usgs.gov/publications/orphan-tsunami-1700-japanese-clues-a-parent-earthquake-north-america)：跨学科调查总报告，含日本档案、地层、森林和地图。
+- [NOAA：1700 年卡斯卡迪亚海啸历史重建](https://sos.noaa.gov/catalog/datasets/tsunami-historical-series-cascadia-1700/)：传播模型、当地与日本日期换算、震源规模的概述；动画是现代模型。
+- [Yamaguchi 等：用树轮确定 1700 年地震的年代，Nature，1997](https://www.nature.com/articles/40048)：树轮证据及其与日本海啸记录的关系；不要将某处树木结果等同整个断层逐点定年。
+- [树轮定年论文勘误，Nature，1997](https://www.nature.com/articles/37029)：澄清树轮日期对震源长度与九级地震可能性的约束。
+- [大卫·山口：1700 年地震树轮研究进展，1999](https://pubs.usgs.gov/of/1999/0400/report.pdf)：研究者本人回顾放射性碳、跨地区证据、日本档案与树轮精细定年的先后。
+- [华盛顿大学：原住民口述历史与卡斯卡迪亚地震研究](https://www.washington.edu/news/2005/07/11/native-lore-tells-the-tale-theres-been-a-whole-lotta-shakin-goin-on/)：鲁思·卢德温等人的合作研究；口述传统有其历史与文化背景，不可全部硬配到同一次事件。
+
+## 宽街幸存者的秘密
+
+本关把斯诺的宽街调查与更早启动的南伦敦水公司比较编织成两条线，倒叙处明确标时。人物、核心证据有史料依据，文字不是历史人物原话。地图、街景与关系图为改编示意；标有历史数字的证据卡注明统计口径。
+
+- [UCLA 斯诺档案：1849 年水传播假说与后续调查](https://epi-snow.ph.ucla.edu/Stream1_introduction_c.html)：介绍斯诺在宽街暴发之前的假说、动机和比较研究。
+- [斯诺《论霍乱的传播方式》第二版：宽街调查原文，1855](https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_a.html)：UCLA 转录原文并展示原图，含济贫院、酿酒厂、远处饮水者与水源访谈。
+- [UCLA 斯诺档案：拆泵柄、怀特黑德与后续调查](https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_e.html)：含怀特黑德历史文字、调查记录与时间线；所谓最早污染病例属于很可能的解释，不是病原学确诊。
+- [地图与神话：宽街调查的历史重建](https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_f.html)：包含 Brody 等在 The Lancet 发表的历史研究，澄清斯诺先有假说、正式地图较晚、地图并非自动证明。
+- [斯诺 1855 年原文与南伦敦水公司比较](https://epi-snow.ph.ucla.edu/Stream3_GrandExperiment_d.html)：含水源核查、自然比较设计、供水区域地图与每万户霍乱死亡数。
+- [世界卫生组织：霍乱事实说明](https://www.who.int/news-room/fact-sheets/detail/cholera)：用于尾声区分现代已知的感染与传播机制和 1854 年调查者实际掌握的证据。
+
+## 全城最会算数的马
+
+你将沿着汉斯调查的证据顺序推进。关键实验发生于 1904 年；普丰斯特于 1907 年出版德文研究，1911 年有英译本。页面插图均为概念示意，叙述不是历史人物逐字对话。实验结果只说明本案中这些表现的机制，不概括所有动物的能力。
+
+- [普丰斯特《聪明汉斯》：1911 年英译本全文](https://www.gutenberg.org/cache/epub/33936/pg33936-images.html)：原始研究，重点为第二章实验条件、第三章自我观察、第四章人体实验；含实验表格与动作记录图。德文原著发表于 1907 年。
+- [《聪明汉斯》所收施通普夫序言及 1904 年调查报告](https://www.gutenberg.org/cache/epub/33936/pg33936-images.html)：同一原始著作中的独立报告部分：区分 9 月初步委员会结论与随后实验调查，不误称前者已证实马能算术。
+- [Wolfgang Prinz：Measurement contra appearance（2006）](https://pure.mpg.de/rest/items/item_724327_5/component/file_724326/content)：马克斯·普朗克学会公开保存的研究文章，从实验心理学角度回顾观察、测量和无意动作。
+
+## 我必须证明这幅名画是假的
+
+你扮演沿史料追查的鉴定调查者，不替涉案者辩护。故事先从 1945 年开场，再回查 1937 年；末幕明确转入后来的博物馆材料研究。插图为概念示意，没有虚构原始检验图、颜料数据或人物逐字对话。
+
+- [博伊曼斯·范伯宁恩博物馆：《以马忤斯的晚餐》馆藏记录](https://www.boijmans.nl/en/collection/artworks/101464/the-men-at-emmaus)：该馆 1937 年将作品作为维米尔购入；战后经梵·米格伦供认等调查揭明伪作身份。馆藏页面可看原作图。
+- [美国国家美术馆：维米尔图录中的鉴定史](https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/research/publications/pdfs/johannes-vermeer.pdf)：有关维米尔研究史、布雷迪乌斯与汉内马认可伪作的讨论。购入年份采用收藏馆记录，不采用旧图录相异年份。
+- [1945 年《纽约时报》报道：Old Master to Order（国家美术馆教学附录）](https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/education/learning-resources/teaching-packets/pdfs/dutch_supplements.pdf)：同期报道，用于说明战后交易调查、供认及来源故事的争议；报道中的英雄化判断和未核实细节不作为定论。
+- [荷兰国家档案馆：梵·米格伦 1945 年作画演示照片](https://www.nationaalarchief.nl/onderzoeken/fotocollectie/af58658a-d0b4-102d-bcf8-003048976d84)：档案照片记录他绘制《耶稣与学者》以演示能力；不是“1947 年在法庭当场画完”的传奇。
+- [荷兰国立博物馆：1945 年 10 月 23 日扣押的酒杯与物证标签](https://www.rijksmuseum.nl/nl/collectie/object/Stuk-van-overtuiging-behorende-bij-het-proces-verbaal-tegen-H-A-van-Meegeren--e55c693364167c704460b503ddb39faf)：馆藏 NG-2010-142，标签将尼斯别墅中扣押的绿色酒杯与梵·米格伦的《最后的晚餐》联系。不能单靠杯子鉴定所有画。
+- [保罗·科尔曼斯：Van Meegeren’s Faked Vermeers and De Hooghs（1949）书目与预览](https://books.google.com/books?id=Db_qAAAAMAAJ)：当时科学鉴定报告的书目与有限预览，可确认作者、出版与使用截面、射线等研究类别；本章不据有限预览编造具体化学峰或逐画结论。
+- [考陶尔德：There Not There 教学资料，第 4 页](https://sites.courtauld.ac.uk/macurating/wp-content/uploads/sites/8/2018/06/There-Not-There-Learning-Resource.pdf)：后续《鸨母》研究：旧画布与现代合成树脂并存。此证据属于后来研究的另一幅画，不能倒填到 1945 年的个案现场。
+- [考陶尔德：Art and Artifice 展览资料（2023）](https://courtauld.ac.uk/wp-content/uploads/2023/03/Art-and-Artifice-PDF-for-website.pdf)：讲解《鸨母》的捐赠、伪作材料研究及鉴定方法；并提醒许多艺术品仍有不确定性。
+
+## 来自星空的心跳
+
+以贝尔·伯内尔和剑桥射电团队的记录、回忆及发现论文为依据。你将重走排查路径；决策是教学改编，未编造人物对话。页面图形为教学重绘，原始记录可从史料入口查看。前半程只使用当时已经获得的证据。
+
+- [剑桥大学：贝尔·伯内尔口述发现经过](https://www.cam.ac.uk/stories/journeysofdiscovery-pulsars)：当事人访谈；包含阵列建造、快速记录、独立望远镜检查与原图说明。
+- [丘吉尔档案中心：Hunting pulsars](https://archives.chu.cam.ac.uk/collections/research-guides/misc-109/)：1967年8月6日原始记录及克雷格·麦凯的寻星图、回忆。档案图片权利仍归其权利人。
+- [贝尔·伯内尔：Little Green Men, White Dwarfs or Pulsars?](https://www.bigear.org/vol1no1/burnell.htm)：当事人回顾文章，记述识别、排查和后续来源；属于事后回忆，不能当作逐日实验日志。
+- [休伊什等：Observation of a Rapidly Pulsating Radio Source（1968）](https://hosting.astro.cornell.edu/~shami/psrintro/papers/HBP%2B68.pulsars.pdf)：Nature 217, 709–713 原论文扫描；作者包括休伊什、贝尔、皮尔金顿、斯科特、柯林斯。
+- [CSIRO：脉冲星发现五十周年](https://www.csiro.au/en/news/all/articles/2017/november/pulsar)：射电天文学研究者撰写的机构回顾，区分发现脉冲、排除干扰与解释天体。
+- [曼彻斯特大学 Jodrell Bank：脉冲星性质](https://www.jb.man.ac.uk/distance/frontiers/pulsars/section1.html)：用于后续蟹状星云、短周期与旋转模型的背景；本关不引用页面已过时的‘当前最快’纪录。
+
+## 没有弹孔的地方
+
+历史主线取自亚伯拉罕·瓦尔德与哥伦比亚统计研究组的工作。中间的卡片、装甲预算与数据推演均明确标为本关教学模型，不是当年真实战损统计。飞机损伤图为现代教学重绘，不是瓦尔德原图；本关不虚构他与将领的对话。
+
+- [CNA：瓦尔德飞机脆弱性备忘录再版说明](https://www.cna.org/analyses/1980/a-method-of-estimating-plane-vulnerability)：1980年公开再版说明：原作是哥伦比亚统计研究组在二战期间的一系列备忘录。
+- [瓦尔德：根据幸存飞机损伤估计脆弱性的方法](https://www.cna.org/reports/1980/0204320000.pdf)：原备忘录再版，共100页。重点参看PDF第10–11页的问题定义、第65–74页的部位风险与模型假设、第75页起的抽样误差；页码按PDF阅读器计数。
+- [哥伦比亚大学统计系：系史与战时统计研究组](https://stat.columbia.edu/department-history/)：研究组成员与真实机构背景；不是单人凭直觉解决一切的传奇。
+- [美国数学会：关于瓦尔德传奇的历史考察入口](https://mathvoices.ams.org/featurecolumn/2021/06/01/the-once-and-future-feature-column/)：该页介绍 Casselman 对流行飞机红点故事与历史证据的区分。游戏不把传播图片或虚构对白当作原始档案。
+
+## 空气里多出来的一点重量
+
+依据瑞利1895年讲演、原始研究与机构史料改编。人物动作与场景连接为叙事重构，未虚构逐字对话。图解为关系示意；标为原始读数的表格保留其单位与条件。
+
+- [瑞利（1895）：Argon，皇家研究院讲演原文转录](https://web.lemoyne.edu/~giunta/EA/RAYLEIGHann.HTML)：参与者当年讲演，包含制气方法、原始称量表、氮气解离假说与两条分离路线。文中注释为后人所加。
+- [瑞利（1904）：氩的发现，诺贝尔讲演](https://www.nobelprize.org/uploads/2018/06/strutt-lecture.pdf)：研究者回顾；用于核对比较测量和发现过程，不把回顾措辞当现场对白。
+- [英国皇家化学会：氩的性质与历史](https://periodic-table.rsc.org/element/18/Argon)：现代性质参照；不把后来的工业分离方法放进1894年的实验现场。
+
+## 金箔背后的反击
+
+依据盖革与马斯登1909年实验论文、卢瑟福1911年理论论文及1913年定量检验。决策和简化数据练习为教学改编，未编造现场对白。所有粒子路径图都是模型示意；当时直接观察的是屏上的闪光，不是原子照片或粒子全程轨迹。
+
+- [美国物理联合会：Alpha Particles and the Atom](https://history.aip.org/exhibits/rutherford/sections/alpha-particles-atom.html)：实验背景、人物分工、1909装置图、1911手稿与1912—1913后续检验。
+- [盖革、马斯登：On a Diffuse Reflection of the α-Particles（1909）](https://www.bo.infn.it/herab/people/zoccoli/didattica/esperimenti_fisica/E1.1_Scattering_Geiger%20%26%20Marsden%20Study%20Alpha%20Particle%20Scattering.pdf)：原论文文本及图表的机构托管版本；包含屏蔽、无金属时背景、不同材料与厚度检查。其约1/8000比例来自所述铂实验条件，不能当作一切金箔实验的固定比例。
+- [卢瑟福：The Scattering of α and β Particles by Matter and the Structure of the Atom（1911）](https://www.chemteam.info/Chem-History/Rutherford-1911/Rutherford-1911.html)：原论文转录，附原刊扫描入口；中心电荷符号与原子稳定性的问题在原文中有明确限度。
+- [盖革、马斯登：The Laws of Deflexion of α Particles through Large Angles（1913）](https://www.chemteam.info/Chem-History/GeigerMarsden-1913/GeigerMarsden-1913.html)：原论文转录及装置、计数表；用角度、薄箔厚度、材料与粒子速度作定量检验。
+- [曼彻斯特大学物理与天文学系：历史与传承](https://www.physics.manchester.ac.uk/about/history-and-heritage/)：实验室与原子核研究的机构背景；本关以原始论文区分1909现象、1911模型和后续检验。
+
+# 十关版声音说明
+
+十关共有396个选项解析录音，均为普通话合成配音，不是科学家真人录音。网页按需加载所选项的MP3；本地单文件版包含全部录音。正误提示音由浏览器合成。
