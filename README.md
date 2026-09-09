@@ -45,4 +45,4 @@
 
 ## 网页发布
 
-本仓库为独立静态发布包，GitHub Pages 从 `main` 分支根目录发布。`index.html` 为完整游戏，`.nojekyll` 保持静态文件原样提供。无需后端、数据库或API密钥。
+本仓库为独立静态发布包，GitHub Pages 从 `main` 分支根目录发布。`index.html` 为完整游戏，`.nojekyll` 保持静态文件原样提供。社区更新由 GitHub Actions 处理，无需自行部署服务器、数据库或配置 API 密钥。

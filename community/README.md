@@ -21,7 +21,7 @@
 
 `sync.mjs --publish` 使用 Actions 自动提供的仓库令牌，通过 Contents API 更新固定文件 `community.json`。每次更新检查旧文件 SHA；遇到并发编辑，会重新读取投稿和旧文件再尝试。解析、联网或容量检查失败时保留上次有效快照，不发布部分榜单。无数据变化时不产生新提交。
 
-机器人提交不会自动触发 GitHub Pages 的分支构建，因此客户端从以下固定地址读取最新快照，而不是依赖 Pages 构建：
+为使榜单更新不依赖 GitHub Pages 重新构建，客户端直接从以下固定地址读取最新快照：
 
 [共享快照](https://raw.githubusercontent.com/yaoyuzhang1/socrates-question/main/community.json)
 
@@ -47,7 +47,7 @@ node community/sync.mjs
 - [未认证 API 请求速率限制](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api)
 - [Issues 工作流触发事件](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 - [防止脚本注入](https://docs.github.com/en/actions/concepts/security/script-injections)
-- [GITHUB_TOKEN 提交不触发 Pages 构建](https://docs.github.com/en/actions/concepts/security/github_token)
+- [GITHUB_TOKEN 的权限与工作流触发限制](https://docs.github.com/en/actions/concepts/security/github_token)
 
 工作流固定使用官方 action 的完整提交 SHA。2026-09-09 通过官方仓库 tags API 核对：
 
