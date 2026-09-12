@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-12T06:22:25.000Z",
+  "updatedAt": "2026-09-12T06:24:16.246Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -77,34 +77,9 @@
       "comments": []
     },
     "pulsar": {
-      "totalPlayers": 1,
-      "entries": [
-        {
-          "rank": 1,
-          "login": "BUGUH",
-          "nickname": "May",
-          "submittedAt": "2026-09-12T06:22:08.000Z",
-          "issueNumber": 4,
-          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/4",
-          "score": 100,
-          "firstCorrectCount": 12,
-          "correctedCount": 0,
-          "hintedCount": 0,
-          "totalQuestions": 12,
-          "completedAt": "2026-09-12T06:17:46.934Z"
-        }
-      ],
-      "comments": [
-        {
-          "login": "BUGUH",
-          "nickname": "May",
-          "submittedAt": "2026-09-12T06:22:08.000Z",
-          "issueNumber": 4,
-          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/4",
-          "body": "个人觉得设计和做这个游戏的想法非常好，但是AI生成文本和题目还是比较刻板印象的。文本上负面印象是文字赘余，有一定的故事性但阅读困难；题目上的负面印象是完全没有迷惑性，仅从描述上就能猜出一定选某个，而不是真的让人去思考该去怎么做。",
-          "rating": 4
-        }
-      ]
+      "totalPlayers": 0,
+      "entries": [],
+      "comments": []
     },
     "aircraft": {
       "totalPlayers": 0,
