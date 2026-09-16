@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T12:10:45.515Z",
+  "updatedAt": "2026-09-16T14:21:23.893Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -77,7 +77,7 @@
       ]
     },
     "hans": {
-      "totalPlayers": 4,
+      "totalPlayers": 5,
       "entries": [
         {
           "rank": 1,
@@ -122,7 +122,21 @@
           "completedAt": "2026-09-16T11:18:42.555Z"
         },
         {
-          "rank": 4,
+          "rank": 1,
+          "login": "astrocyte77",
+          "nickname": "astrocyte",
+          "submittedAt": "2026-09-16T14:21:05.000Z",
+          "issueNumber": 11,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/11",
+          "score": 100,
+          "firstCorrectCount": 12,
+          "correctedCount": 0,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-16T14:20:19.922Z"
+        },
+        {
+          "rank": 5,
           "login": "yaoyuzhang1",
           "nickname": "程序员",
           "submittedAt": "2026-09-09T09:57:21.000Z",
@@ -137,6 +151,15 @@
         }
       ],
       "comments": [
+        {
+          "login": "astrocyte77",
+          "nickname": "astrocyte",
+          "submittedAt": "2026-09-16T14:21:05.000Z",
+          "issueNumber": 11,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/11",
+          "body": "中文部分有些不像人类（",
+          "rating": 4
+        },
         {
           "login": "skc-bio",
           "nickname": "sfry",
