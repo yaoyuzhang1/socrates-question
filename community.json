@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T09:00:24.382Z",
+  "updatedAt": "2026-09-16T10:14:04.829Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -77,7 +77,7 @@
       ]
     },
     "hans": {
-      "totalPlayers": 2,
+      "totalPlayers": 3,
       "entries": [
         {
           "rank": 1,
@@ -94,7 +94,21 @@
           "completedAt": "2026-09-16T08:45:39.342Z"
         },
         {
-          "rank": 2,
+          "rank": 1,
+          "login": "polarplover",
+          "nickname": "reneeSy",
+          "submittedAt": "2026-09-16T10:13:50.000Z",
+          "issueNumber": 8,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/8",
+          "score": 100,
+          "firstCorrectCount": 12,
+          "correctedCount": 0,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-16T09:38:15.005Z"
+        },
+        {
+          "rank": 3,
           "login": "yaoyuzhang1",
           "nickname": "程序员",
           "submittedAt": "2026-09-09T09:57:21.000Z",
@@ -109,6 +123,15 @@
         }
       ],
       "comments": [
+        {
+          "login": "polarplover",
+          "nickname": "reneeSy",
+          "submittedAt": "2026-09-16T10:13:50.000Z",
+          "issueNumber": 8,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/8",
+          "body": "",
+          "rating": 5
+        },
         {
           "login": "lacipe-wakion",
           "nickname": "可莉女儿最可爱",
