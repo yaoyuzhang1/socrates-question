@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-12T06:24:16.246Z",
+  "updatedAt": "2026-09-16T08:52:14.164Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -52,10 +52,24 @@
       "comments": []
     },
     "hans": {
-      "totalPlayers": 1,
+      "totalPlayers": 2,
       "entries": [
         {
           "rank": 1,
+          "login": "lacipe-wakion",
+          "nickname": "可莉女儿最可爱",
+          "submittedAt": "2026-09-16T08:51:59.000Z",
+          "issueNumber": 6,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/6",
+          "score": 100,
+          "firstCorrectCount": 12,
+          "correctedCount": 0,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-16T08:45:39.342Z"
+        },
+        {
+          "rank": 2,
           "login": "yaoyuzhang1",
           "nickname": "程序员",
           "submittedAt": "2026-09-09T09:57:21.000Z",
@@ -69,7 +83,17 @@
           "completedAt": "2026-09-09T09:55:50.730Z"
         }
       ],
-      "comments": []
+      "comments": [
+        {
+          "login": "lacipe-wakion",
+          "nickname": "可莉女儿最可爱",
+          "submittedAt": "2026-09-16T08:51:59.000Z",
+          "issueNumber": 6,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/6",
+          "body": "",
+          "rating": 3
+        }
+      ]
     },
     "forgery": {
       "totalPlayers": 0,
