@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T11:20:37.762Z",
+  "updatedAt": "2026-09-16T12:10:45.515Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -189,7 +189,17 @@
     "nucleus": {
       "totalPlayers": 0,
       "entries": [],
-      "comments": []
+      "comments": [
+        {
+          "login": "leafKIBO",
+          "nickname": "leafkibo",
+          "submittedAt": "2026-09-16T12:10:29.000Z",
+          "issueNumber": 10,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/10",
+          "body": "文案生涩。。。。。有点影响体验",
+          "rating": 3
+        }
+      ]
     }
   }
 }
