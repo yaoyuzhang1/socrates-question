@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T05:08:27.524Z",
+  "updatedAt": "2026-09-17T05:21:43.561Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -148,7 +148,7 @@
       ]
     },
     "hans": {
-      "totalPlayers": 5,
+      "totalPlayers": 6,
       "entries": [
         {
           "rank": 1,
@@ -207,7 +207,21 @@
           "completedAt": "2026-09-16T14:20:19.922Z"
         },
         {
-          "rank": 5,
+          "rank": 1,
+          "login": "zkx0408",
+          "nickname": "zkx0408",
+          "submittedAt": "2026-09-17T05:21:30.000Z",
+          "issueNumber": 15,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/15",
+          "score": 100,
+          "firstCorrectCount": 12,
+          "correctedCount": 0,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-17T00:07:09.452Z"
+        },
+        {
+          "rank": 6,
           "login": "yaoyuzhang1",
           "nickname": "程序员",
           "submittedAt": "2026-09-09T09:57:21.000Z",
@@ -222,6 +236,15 @@
         }
       ],
       "comments": [
+        {
+          "login": "zkx0408",
+          "nickname": "zkx0408",
+          "submittedAt": "2026-09-17T05:21:30.000Z",
+          "issueNumber": 15,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/15",
+          "body": "感觉图片卡和推理问题相关性不大，建议把一些线索藏入图片，增加游戏趣味性和难度",
+          "rating": 4
+        },
         {
           "login": "astrocyte77",
           "nickname": "astrocyte",
