@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T11:27:39.652Z",
+  "updatedAt": "2026-09-17T12:15:46.276Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -273,7 +273,7 @@
         },
         {
           "rank": 6,
-          "login": "limoyandodosilibisi",
+          "login": "dengshandianche",
           "nickname": "momo",
           "submittedAt": "2026-09-17T11:23:32.000Z",
           "issueNumber": 21,
@@ -288,7 +288,7 @@
       ],
       "comments": [
         {
-          "login": "limoyandodosilibisi",
+          "login": "dengshandianche",
           "nickname": "momo",
           "submittedAt": "2026-09-17T11:27:22.000Z",
           "issueNumber": 22,
