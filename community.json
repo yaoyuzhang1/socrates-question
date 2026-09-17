@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T12:15:46.276Z",
+  "updatedAt": "2026-09-17T14:16:22.066Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -368,7 +368,7 @@
       "comments": []
     },
     "argon": {
-      "totalPlayers": 1,
+      "totalPlayers": 2,
       "entries": [
         {
           "rank": 1,
@@ -383,9 +383,32 @@
           "hintedCount": 0,
           "totalQuestions": 12,
           "completedAt": "2026-09-17T11:17:36.119Z"
+        },
+        {
+          "rank": 1,
+          "login": "Kn1ght-Lai",
+          "nickname": "Kn1ght",
+          "submittedAt": "2026-09-17T14:16:04.000Z",
+          "issueNumber": 24,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/24",
+          "score": 100,
+          "firstCorrectCount": 12,
+          "correctedCount": 0,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-17T14:13:18.941Z"
         }
       ],
       "comments": [
+        {
+          "login": "Kn1ght-Lai",
+          "nickname": "Kn1ght",
+          "submittedAt": "2026-09-17T14:16:04.000Z",
+          "issueNumber": 24,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/24",
+          "body": "是否修改之前猜想的节点处，可以添加未被选择的选项，因为容易被遗忘",
+          "rating": 4
+        },
         {
           "login": "taomuzhaotao",
           "nickname": "R",
