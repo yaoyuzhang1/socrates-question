@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T11:12:05.353Z",
+  "updatedAt": "2026-09-17T11:18:29.598Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -345,9 +345,34 @@
       "comments": []
     },
     "argon": {
-      "totalPlayers": 0,
-      "entries": [],
-      "comments": []
+      "totalPlayers": 1,
+      "entries": [
+        {
+          "rank": 1,
+          "login": "taomuzhaotao",
+          "nickname": "R",
+          "submittedAt": "2026-09-17T11:18:17.000Z",
+          "issueNumber": 19,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/19",
+          "score": 100,
+          "firstCorrectCount": 12,
+          "correctedCount": 0,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-17T11:17:36.119Z"
+        }
+      ],
+      "comments": [
+        {
+          "login": "taomuzhaotao",
+          "nickname": "R",
+          "submittedAt": "2026-09-17T11:18:17.000Z",
+          "issueNumber": 19,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/19",
+          "body": "文字有点阅读障碍......",
+          "rating": 5
+        }
+      ]
     },
     "nucleus": {
       "totalPlayers": 0,
