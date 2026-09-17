@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T06:00:44.111Z",
+  "updatedAt": "2026-09-17T11:07:23.364Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -171,7 +171,7 @@
       ]
     },
     "hans": {
-      "totalPlayers": 6,
+      "totalPlayers": 7,
       "entries": [
         {
           "rank": 1,
@@ -256,9 +256,32 @@
           "hintedCount": 0,
           "totalQuestions": 12,
           "completedAt": "2026-09-09T09:55:50.730Z"
+        },
+        {
+          "rank": 6,
+          "login": "taomuzhaotao",
+          "nickname": "tt",
+          "submittedAt": "2026-09-17T11:07:06.000Z",
+          "issueNumber": 17,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/17",
+          "score": 97,
+          "firstCorrectCount": 11,
+          "correctedCount": 1,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-17T11:03:45.489Z"
         }
       ],
       "comments": [
+        {
+          "login": "taomuzhaotao",
+          "nickname": "tt",
+          "submittedAt": "2026-09-17T11:07:06.000Z",
+          "issueNumber": 17,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/17",
+          "body": "有嚼劲的文字\n选对后直接朗读有点点吓人",
+          "rating": 5
+        },
         {
           "login": "zkx0408",
           "nickname": "zkx0408",
