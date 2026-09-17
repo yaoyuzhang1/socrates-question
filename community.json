@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T11:19:22.181Z",
+  "updatedAt": "2026-09-17T11:23:51.295Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -171,7 +171,7 @@
       ]
     },
     "hans": {
-      "totalPlayers": 7,
+      "totalPlayers": 8,
       "entries": [
         {
           "rank": 1,
@@ -270,9 +270,32 @@
           "hintedCount": 0,
           "totalQuestions": 12,
           "completedAt": "2026-09-17T11:03:45.489Z"
+        },
+        {
+          "rank": 6,
+          "login": "limoyandodosilibisi",
+          "nickname": "momo",
+          "submittedAt": "2026-09-17T11:23:32.000Z",
+          "issueNumber": 21,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/21",
+          "score": 97,
+          "firstCorrectCount": 11,
+          "correctedCount": 1,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-17T11:17:11.500Z"
         }
       ],
       "comments": [
+        {
+          "login": "limoyandodosilibisi",
+          "nickname": "momo",
+          "submittedAt": "2026-09-17T11:23:32.000Z",
+          "issueNumber": 21,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/21",
+          "body": "在把怀疑方向转变到马对人体不自觉的动作做出反应需要一些特别的想法，后面的验证环节感觉挺严谨的",
+          "rating": 5
+        },
         {
           "login": "taomuzhaotao",
           "nickname": "X",
