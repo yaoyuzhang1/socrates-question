@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T11:07:23.364Z",
+  "updatedAt": "2026-09-17T11:12:05.353Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -275,11 +275,11 @@
       "comments": [
         {
           "login": "taomuzhaotao",
-          "nickname": "tt",
-          "submittedAt": "2026-09-17T11:07:06.000Z",
-          "issueNumber": 17,
-          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/17",
-          "body": "有嚼劲的文字\n选对后直接朗读有点点吓人",
+          "nickname": "X",
+          "submittedAt": "2026-09-17T11:11:51.000Z",
+          "issueNumber": 18,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/18",
+          "body": "声音可以设计成点击后朗读",
           "rating": 5
         },
         {
