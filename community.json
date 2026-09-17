@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:26:53.389Z",
+  "updatedAt": "2026-09-17T16:59:18.929Z",
   "repository": "yaoyuzhang1/socrates-question",
   "source": "github-issues",
   "selfReported": true,
@@ -194,7 +194,7 @@
       ]
     },
     "hans": {
-      "totalPlayers": 8,
+      "totalPlayers": 9,
       "entries": [
         {
           "rank": 1,
@@ -307,9 +307,32 @@
           "hintedCount": 0,
           "totalQuestions": 12,
           "completedAt": "2026-09-17T11:17:11.500Z"
+        },
+        {
+          "rank": 9,
+          "login": "zy350234",
+          "nickname": "zyzy",
+          "submittedAt": "2026-09-17T16:59:02.000Z",
+          "issueNumber": 26,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/26",
+          "score": 93,
+          "firstCorrectCount": 10,
+          "correctedCount": 2,
+          "hintedCount": 0,
+          "totalQuestions": 12,
+          "completedAt": "2026-09-17T16:58:31.604Z"
         }
       ],
       "comments": [
+        {
+          "login": "zy350234",
+          "nickname": "zyzy",
+          "submittedAt": "2026-09-17T16:59:02.000Z",
+          "issueNumber": 26,
+          "issueUrl": "https://github.com/yaoyuzhang1/socrates-question/issues/26",
+          "body": "",
+          "rating": 4
+        },
         {
           "login": "dengshandianche",
           "nickname": "momo",
